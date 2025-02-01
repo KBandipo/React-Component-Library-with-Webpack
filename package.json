@@ -2,15 +2,27 @@
   "name": "react-component-library-with-webpack",
   "version": "1.0.0",
   "description": "Learning to build a React UI component library with Webpack",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "tsc": "tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kenny",
+  "license": "MIT",
   "devDependencies": {
+    "@types/react": "^19.0.8",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
-  }
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "files": [
+    "./dist"
+  ]
 }
